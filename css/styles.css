@@ -1,3 +1,32 @@
+/*FONT FACE*/
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Manrope-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../fonts/Fraunces-9ptBlack.woff2') format('woff2'),
+    url('../fonts/Fraunces-9ptBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* CUSTOM PROPS */
+:root {
+  /* COLORS */
+  --dark-pruple: #24053E;
+  --eucalyptus: #44ffa1;
+  --davys-grey: #584d62;
+  --ghost-white: #fcf8ff;
+  /* FONTS */
+  --heading-font-family: "Fraunces 144pt", "Times New Roman", "serif";
+  --body-font-family: "Manrope", "Arial", "sans-serif" sans-serif;
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +46,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 32px;
   background-color: #fff;
-  color: #222;
+  color: var(--dark-pruple);
 }
 
 img {
