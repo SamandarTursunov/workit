@@ -120,7 +120,7 @@ select:-webkit-autofill:focus {
   padding: 56px 0px 0px 0px;
 }
 .site-header {
- 
+  
 }
 /* LOGO */
 .logo {
@@ -188,6 +188,7 @@ select:-webkit-autofill:focus {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-bottom: 55px;
 }
 .site-header__logo {
 }
@@ -200,7 +201,7 @@ select:-webkit-autofill:focus {
 .hero__container > *:not(:last-child) {
   margin-bottom: 36px;
 }
-.hero-heading {
+.hero__heading {
   max-width: 635px;
   font-family: var(--heading-font-family);
   font-size: 80px;
@@ -209,7 +210,10 @@ select:-webkit-autofill:focus {
   color: #fff;
   text-align: center;
 }
-.hero-button {
+.hero__img {
+  display: block;
+}
+.hero__button {
   margin: 0px 0px 60px 0px;
 }
 @media
