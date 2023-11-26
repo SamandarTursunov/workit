@@ -24,11 +24,13 @@
     <!-- HERO -->
     <div class="hero">
       <div class="hero__container container">
-        <h1 class="hero-heading">Data <span>tailored</span> to your needs.</h1>
-        <a href="#" class="hero-button button">Learn more</a>
-        <picture>
+        <h1 class="hero__heading">Data <span>tailored</span> to your needs.</h1>
+        <a href="#" class="hero__button button">Learn more</a>
+        <picture class="hero__picture">
+          <source srcset="img/image-hero-mobile.png 1x, img/image-hero-mobile.png 2x" media="(max-width: 500px)">
+          <source srcset="img/image-hero-mobile.png 1x, img/image-hero-mobile.png 2x" media="(max-width: 768px)">
           <source srcset="img/image-hero.webp" type="image/webp">
-          <img src="img/image-hero.png" alt="Phone withstatics illustration on the screen" width="767px" height="441px" srcset="img/image-hero.png 1x, img/image-hero.png 2x"> 
+          <img class="hero__img" src="img/image-hero.png" alt="Phone withstatics illustration on the screen" width="767px" height="441px" srcset="img/image-hero.png 1x, img/image-hero.png 2x"> 
         </picture>
       </div>
     </div>
