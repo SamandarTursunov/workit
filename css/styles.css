@@ -117,6 +117,7 @@ select:-webkit-autofill:focus {
 /* SITE-HEADER-HERO-WRAPPER */
 .site-header-hero-wrapper {
   background-color: var(--dark-pruple);
+  padding: 56px 0px 0px 0px;
 }
 .site-header {
  
