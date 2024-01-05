@@ -285,6 +285,17 @@ select:-webkit-autofill:focus {
   background-color: var(--dark-pruple);
   color: #fff;
 }
+.test-cta__box::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 173px;
+  height: 132px;
+  bottom: -24;
+  right: 96px;
+  background-image: url("../img/circles.svg");
+  transform: rotate(145deg);
+}
 .test-cta__picture {
   display: block;
 }
