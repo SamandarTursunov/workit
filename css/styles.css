@@ -291,10 +291,11 @@ select:-webkit-autofill:focus {
   z-index: 1;
   width: 173px;
   height: 132px;
-  bottom: -24;
+  bottom: -24px;
   right: 96px;
   background-image: url("../img/circles.svg");
-  transform: rotate(145deg);
+  background-size: contain;
+  transform: rotate(-145deg);
 }
 .test-cta__picture {
   display: block;
@@ -305,6 +306,7 @@ select:-webkit-autofill:focus {
   right: calc(100% - 109px);
   bottom: 109px;
   border-radius: 50%;
+  object-fit: cover;
   width: 477px;
   height: 477px;
 }
@@ -319,8 +321,6 @@ select:-webkit-autofill:focus {
 .test-cta__description {
   margin-top: 0;
   margin-bottom: 32px;
-}
-.button {
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -374,6 +374,34 @@ only screen and (                min-resolution: 2dppx) {
     font-size: 16px;
     line-height: 28px;
   }
+  .test-cta__img {
+    width: 281px;
+    height: 281px;
+    right: auto;
+    left: -175px;
+    top: -150px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .test-cta {
+    padding-top: 250px;
+    padding-bottom: 40px;
+  }
+  .test-cta__inner {
+    max-width: 600px;
+  }
+  .test-cta__box {
+    padding: 48px 56px 56px;
+  }
+  .test-cta__heading {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+  .test-cta__description {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .site-header-hero-wrapper {
@@ -387,6 +415,40 @@ only screen and (                min-resolution: 2dppx) {
     margin: 0px 0px 40px 0px;
     font-size: 60px;
     line-height: 1;
+  }
+  .test-cta__inner { 
+    max-width: 514px;
+  }
+  .test-cta__box::before {
+    right: 36px;
+    bottom: -68px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .test-cta {
+    padding-top: 324px;
+    padding-bottom: 54px;
+  }
+  .test-cta__inner {
+    max-width: 100%;
+  }
+  .test-cta__img {
+    top: -228px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .test-cta__box {
+    padding: 32px;
+    text-align: center;
+
+  }
+  .test-cta__box::before {
+    display: none;
+  }
+  .test-cta__heading {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -416,5 +478,11 @@ only screen and (                min-resolution: 2dppx) {
   }
   .feature__inner {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .test-cta__img {
+    width: 250px;
+    height: 250px;
   }
 }
