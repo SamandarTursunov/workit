@@ -89,8 +89,6 @@ select:-webkit-autofill:focus {
   color: rgba(52, 49, 61, 0.5);
   opacity: 1;
 }*/
-
-
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -126,6 +124,10 @@ select:-webkit-autofill:focus {
   background-color: var(--dark-pruple);
   padding-top: 56px;
   padding-bottom: 250px;
+  background-image: url("../img/bg-pattern-1.svg"),
+              url("../img/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-position: left -140px top 116px, right -90px top 313px;
 }
 .site-header-hero-wrapper::after {
   position: absolute;
@@ -499,6 +501,9 @@ only screen and (                min-resolution: 2dppx) {
   }
 }
 @media only screen and (max-width: 700px) {
+  .site-header-hero-wrapper {
+    background-image: none;
+  }
   .test-cta {
     padding-top: 324px;
     padding-bottom: 54px;
